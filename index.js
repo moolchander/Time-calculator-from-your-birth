@@ -5,6 +5,7 @@ var input = prompt("Enter your Birth Date (YYYY-MM-DD):");
 var birthDate = new Date(input);
 var currentDate = new Date();
 
+
 // Check if the date is valid
 if (isNaN(birthDate.getTime())) {
     console.log("Invalid Date!");
@@ -28,7 +29,7 @@ else {
     var years = Math.floor(days / 365.25);
 
     // Display the results
-    console.log("===== LIFE CALCULATOR =====");
+    
     console.log("Birth Date      : " + birthDate.toDateString());
     console.log("Current Date    : " + currentDate.toDateString());
     console.log("Years Lived     : " + years);
